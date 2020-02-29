@@ -11,6 +11,9 @@
     justify-content: center;
     align-items: center;
 }
+@mixin brd {
+    border: solid 1px gray;
+}
 // ==== MAIN =======================>
 *, body{
     margin: 0;
@@ -35,9 +38,18 @@ body{
     background-color: #ffffff;
 }
 .center{
-    @include flexVar(row, stretch, center);
+    @include flexReg();
+    @include brd();
+    // 
+    max-width: 1170px;
+    width: 95%;
+    min-height: 5em;
+}
+.block{
+    @include flexReg()
 }
 .front-of{
+    @include flexReg();
     position: absolute;
     top: 0;
     bottom: 0;
@@ -45,6 +57,8 @@ body{
     right: 0;
     // 
     z-index: 10;
+    // 
+    background-color: rgba(0, 0, 0, 0.171);
 }
 // ==== HEADER =====================>
 .contacts-line{
