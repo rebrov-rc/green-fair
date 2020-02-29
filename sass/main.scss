@@ -43,7 +43,7 @@ body{
     // 
     max-width: 1170px;
     width: 95%;
-    min-height: 5em;
+    // min-height: 5em;
 }
 .block{
     @include flexReg()
@@ -58,15 +58,47 @@ body{
     // 
     z-index: 10;
     // 
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(31, 56, 56, 0.301);
+}
+.color-light{
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
 }
 // ==== HEADER =====================>
+
 .contacts-line{
     height: 48px;
+    margin: auto;
+
 }
 
-.navigation{
+// ==== NAVIGATION ==================>
+.navigation-block{
     height: 105px;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+
+    li{
+        list-style-type: none;
+        
+        &+li{
+            margin-left: 35px;
+        }
+        a{
+            height: 100px;
+            display: inline-block;
+            @include brd; 
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #43a906;  
+            // position: absolute;
+
+        }
+    }
 }
 // ==== BANER =====================>
 .main-baner{
@@ -82,9 +114,36 @@ body{
         width: 100%;
     }
 }
+.baner-title-btn-wrap{
+    border: none;
+    height: 280px;
+    // 
+    @include flexVar(column, space-between, center);
+    .title{
+        font-family: "Open Sans";
+        font-size: 60px;
+        font-weight: 400;
+        // 
+        font-weight: bold;
+text-transform: uppercase;
+
+    }
+    a{
+        display: block;
+        padding: 24px 46px;
+        border-radius: 2px;
+        background-color: #1e352e;
+        box-shadow: 2px 3px 5px  #041404a6;
+    }
+}
 // =====================================>
-.welcom-block{
+.welcome-block{
     height: 645px;
+}
+.welcome-wrap{
+    height: 420px;
+    // 
+    @include flexVar(column, space-between, center);
 }
 // =====================================>
 .volunteer-block{
