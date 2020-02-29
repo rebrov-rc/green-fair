@@ -1,1 +1,132 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.front-of {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.contacts-line {
+  height: 48px;
+}
+
+.navigation {
+  height: 105px;
+}
+
+.main-baner {
+  height: 785px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-baner img {
+  width: 100%;
+}
+
+.welcom-block {
+  height: 645px;
+}
+
+.volunteer-block {
+  height: 302px;
+  background-color: #222222;
+}
+
+.our-works-block {
+  height: 1046px;
+}
+
+.our-achivement-block {
+  height: 567px;
+  background-color: #bdbebd;
+}
+
+.latest-event-block {
+  height: 955px;
+}
+
+.testimonials-block {
+  height: 682px;
+  background-color: #010501;
+}
+
+.latest-blog-block {
+  height: 927px;
+}
+
+.wordpress-theme-block {
+  height: 200px;
+  background-color: #323232;
+}
+
+.brands-line-block {
+  height: 200px;
+}
+
+.contact-us-block {
+  height: 852px;
+  background-color: #eeeeee;
+}
+
+.footer {
+  height: 90px;
+  background-color: #222222;
+}
+/*# sourceMappingURL=main.css.map */

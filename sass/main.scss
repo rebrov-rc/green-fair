@@ -1,0 +1,134 @@
+
+// ==== MIXINS =====================>
+@mixin flexVar($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin flexReg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// ==== MAIN =======================>
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    max-width: 1920px;
+    width: 100%;
+    min-height: 100vh;
+    // 
+    margin: auto;
+    // 
+    background-color: #ffffff;
+}
+.center{
+    @include flexVar(row, stretch, center);
+}
+.front-of{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // 
+    z-index: 10;
+}
+// ==== HEADER =====================>
+.contacts-line{
+    height: 48px;
+}
+
+.navigation{
+    height: 105px;
+}
+// ==== BANER =====================>
+.main-baner{
+    height: 785px;
+    // 
+    overflow: hidden;
+    position: relative;
+    // 
+    @include flexVar(row, center, center);
+    img{
+        // object-fit: cover;
+        // object-position: center;
+        width: 100%;
+    }
+}
+// =====================================>
+.welcom-block{
+    height: 645px;
+}
+// =====================================>
+.volunteer-block{
+    height: 302px;
+    // 
+    background-color: #222222;
+}
+// =====================================>
+.our-works-block{
+    height: 1046px;
+
+}
+// =====================================>
+.our-achivement-block{
+    height: 567px;
+    // 
+    background-color: #bdbebd;
+    // opacity: 0.22;
+}
+// =====================================>
+.latest-event-block{
+    height: 955px;
+}
+// =====================================>
+.testimonials-block{
+    height: 682px;
+    // 
+    background-color: #010501;
+}
+// =====================================>
+.latest-blog-block{
+    height: 927px;
+}
+// =====================================>
+.wordpress-theme-block{
+    height: 200px;
+    // 
+    background-color: #323232;
+}
+// =====================================>
+.brands-line-block{
+    height: 200px;
+}
+// =====================================>
+.contact-us-block{
+    height: 852px;
+    // 
+    background-color: #eeeeee;
+}
+// =====================================>
+.footer{
+    height: 90px;
+    // 
+    background-color: #222222;
+}
+// =====================================>
+
+// ==== DESKTOP ADAPTIVE =====================>
+
+// ==== MOBILE ADAPTIVE =====================>
+
