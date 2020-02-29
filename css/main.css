@@ -71,11 +71,16 @@ body {
 }
 
 .color-light {
-  color: #ffffff;
+  color: white;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn-green {
+  border-radius: 2px;
+  background-color: #42a906;
 }
 
 .contacts-line {
@@ -199,6 +204,33 @@ nav ul li a {
   background-color: #222222;
 }
 
+.volunteer-block section {
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.volunteer-block section a {
+  display: block;
+  padding: 18px 67px;
+}
+
+.volunteer-text {
+  width: 60%;
+}
+
+.vol-word {
+  font-family: "Open Sans";
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.vol-word-2 {
+  color: #43a906;
+}
+
 .our-works-block {
   height: 1046px;
 }
@@ -222,8 +254,50 @@ nav ul li a {
 }
 
 .wordpress-theme-block {
+  position: relative;
   height: 200px;
   background-color: #323232;
+  overflow: hidden;
+}
+
+.wordpress-theme-block .wordpress-bg {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.wordpress-theme-block .wordpress-bg section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wordpress-theme-block .wordpress-bg section span {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.wordpress-theme-block .wordpress-bg section a {
+  display: block;
+  padding: 16px 60px;
+}
+
+.wordpress-theme-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .brands-line-block {

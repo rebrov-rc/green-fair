@@ -61,10 +61,14 @@ body{
     background-color: rgba(31, 56, 56, 0.301);
 }
 .color-light{
-    color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 a{
     text-decoration: none;
+}
+.btn-green{
+    border-radius: 2px;
+    background-color: rgb(66, 169, 6);
 }
 // ==== HEADER =====================>
 
@@ -150,6 +154,29 @@ text-transform: uppercase;
     height: 302px;
     // 
     background-color: #222222;
+    section{
+        border: none;
+        justify-content: space-between;
+        a{  
+            display: block;
+            padding: 18px 67px;
+            // 
+
+        }
+    }
+}
+.volunteer-text{
+    width: 60%;
+}
+.vol-word{
+    font-family: "Open Sans";
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &-2{
+        color: #43a906;
+    }
 }
 // =====================================>
 .our-works-block{
@@ -179,9 +206,34 @@ text-transform: uppercase;
 }
 // =====================================>
 .wordpress-theme-block{
+    position: relative;
     height: 200px;
     // 
-    background-color: #323232;
+    background-color: rgb(50, 50, 50);
+    overflow: hidden;
+    .wordpress-bg{
+        background-color: rgba(0, 0, 0, 0.425);
+        section{
+            @include flexVar(row, space-between, center);
+             span{
+            font-family: "Roboto Slab";
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 90px;
+            text-transform: uppercase;
+            }
+            a{
+                display: block;
+                padding: 16px 60px;
+                // 
+
+            }
+        }
+    }
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
 }
 // =====================================>
 .brands-line-block{
