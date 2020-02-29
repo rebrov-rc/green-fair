@@ -34,7 +34,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 1px gray;
   max-width: 1170px;
   width: 95%;
 }
@@ -85,12 +84,50 @@ a {
 
 .contacts-line {
   height: 48px;
-  margin: auto;
+  -webkit-box-shadow: 0 1px 3px rgba(155, 155, 155, 0.2);
+          box-shadow: 0 1px 3px rgba(155, 155, 155, 0.2);
+  background-color: #fbfbfb;
+}
+
+.contacts-line .contacts-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation-block {
   height: 105px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-wrap span {
+  color: #3e3e3e;
+  font-family: "Roboto Slab";
+  font-size: 29px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -101,6 +138,7 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
+  position: relative;
 }
 
 nav ul li + li {
@@ -110,14 +148,13 @@ nav ul li + li {
 nav ul li a {
   height: 100px;
   display: inline-block;
-  border: solid 1px gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 3px solid #43a906;
+  color: #393939;
 }
 
 .main-baner {
@@ -197,6 +234,92 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.welcome-wrap .welcome-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-symbols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.welcome-symbols .symbols-block {
+  height: 280px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-symbols .symbols-block div {
+  width: 120px;
+  height: 120px;
+  border: solid 2px #c4c4c4;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-symbols .symbols-block div .fa-sun, .welcome-symbols .symbols-block div .fa-map-marker-alt,
+.welcome-symbols .symbols-block div .fa-recycle, .welcome-symbols .symbols-block div .fa-pagelines {
+  color: #c4c4c4;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.welcome-symbols .symbols-block h5 {
+  color: #393939;
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcome-symbols .symbols-block span {
+  text-align: center;
 }
 
 .volunteer-block {
@@ -312,5 +435,18 @@ nav ul li a {
 .footer {
   height: 90px;
   background-color: #222222;
+}
+
+.footer section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer section span {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

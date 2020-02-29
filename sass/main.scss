@@ -12,7 +12,7 @@
     align-items: center;
 }
 @mixin brd {
-    border: solid 1px gray;
+    // border: solid 1px gray;
 }
 // ==== MAIN =======================>
 *, body{
@@ -70,11 +70,21 @@ a{
     border-radius: 2px;
     background-color: rgb(66, 169, 6);
 }
+// hr{
+//     position: absolute;
+//     width: 4em;
+// }
 // ==== HEADER =====================>
 
 .contacts-line{
     height: 48px;
-    margin: auto;
+    // 
+    box-shadow: 0 1px 3px rgba(155, 155, 155, 0.2);
+    background-color: #fbfbfb;
+    .contacts-wrap{
+        @include flexVar(row, space-between, center);
+
+    }
 
 }
 
@@ -82,12 +92,24 @@ a{
 .navigation-block{
     height: 105px;
     margin: auto;
+    // 
+    @include flexVar(row, space-between, center);
+
+}
+.logo-wrap{
+    span{
+        color: #3e3e3e;
+        font-family: "Roboto Slab";
+        font-size: 29px;
+        font-weight: bold;
+    }
 }
 nav ul{
     display: flex;
 
     li{
         list-style-type: none;
+        position: relative;
         
         &+li{
             margin-left: 35px;
@@ -98,8 +120,11 @@ nav ul{
             @include brd; 
             display: flex;
             align-items: center;
-            border-bottom: 3px solid #43a906;  
+            // flex-direction: column;
+            // border-bottom: 3px solid #43a906;  
             // position: absolute;
+            // 
+            color: #393939;
 
         }
     }
@@ -148,6 +173,45 @@ text-transform: uppercase;
     height: 420px;
     // 
     @include flexVar(column, space-between, center);
+    .welcome-title-wrap{
+        // border: solid 1px;
+        @include flexVar(column, space-between, center);
+    }
+}
+.welcome-symbols{
+    @include flexVar(row, space-between, center); 
+    width: 100%;
+    .symbols-block{
+        height: 280px;
+        width: 250px;
+        // @include brd;
+        @include flexVar(column, space-between, center);
+        div{
+            width: 120px;
+            height: 120px;
+            border: solid 2px #c4c4c4;
+            border-radius: 50%;
+            // 
+            @include flexReg()
+            .fa-sun, .fa-map-marker-alt,
+            .fa-recycle, .fa-pagelines{
+                color: #c4c4c4;
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+        h5{
+            color: #393939;
+            font-family: "Roboto Slab";
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    
 }
 // =====================================>
 .volunteer-block{
@@ -250,6 +314,15 @@ text-transform: uppercase;
     height: 90px;
     // 
     background-color: #222222;
+    section{
+        justify-content: space-between;
+        span{
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: bold; 
+        }
+    }
 }
 // =====================================>
 
