@@ -62,19 +62,19 @@
         color: white;
     }
     20%{
-        color: rgb(255, 255, 177);
+        color: rgb(255, 255, 152);
     }
     40%{
-        color: rgb(204, 255, 181);
+        color: rgb(184, 255, 152);
     }
     60%{
-        color: rgb(185, 224, 255);
+        color: rgb(155, 210, 255);
     }
     80%{
-        color: rgb(255, 244, 181);
+        color: rgb(255, 240, 155);
     }
     100%{
-        color: rgb(255, 245, 238);
+        color: rgb(255, 208, 174);
     }
 }
 @keyframes fly{
@@ -193,16 +193,18 @@ nav ul{
             margin-left: 35px;
         }
         a{
-            height: 100px;
+            height: 104px;
             display: inline-block;
             @include brd; 
             display: flex;
             align-items: center;
-            // flex-direction: column;
-            // border-bottom: 3px solid #43a906;  
-            // position: absolute;
+            border-bottom: 4px solid #42a90600;  
             // 
             color: #393939;
+            &:hover{
+                border-bottom: 4px solid #43a906;  
+
+            }
 
         }
     }
@@ -264,6 +266,19 @@ text-transform: uppercase;
         width: 250px;
         // @include brd; 
         @include flexVar(column, space-between, center);
+        &:hover {
+            div{
+                background-color: #43a906;
+                border: solid 2px #43a906;
+            }
+            .fa-sun, .fa-map-marker-alt,
+            .fa-recycle, .fa-pagelines{
+                color: white;
+            }
+            h5{
+                color: #43a906;
+            }
+        }
         div{
             width: 120px;
             height: 120px;
@@ -276,6 +291,7 @@ text-transform: uppercase;
                 color: #c4c4c4;
                 font-size: 40px;
                 font-weight: bold;
+
             }
         }
         h5{
@@ -350,7 +366,7 @@ text-transform: uppercase;
     &:hover{
         background-color: #43a906;
         color: white;
-        animation:disco 3s .5s infinite;
+        animation:disco 1s .2s infinite linear;
     }
 
 }

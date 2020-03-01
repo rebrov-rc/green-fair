@@ -107,19 +107,19 @@
     color: white;
   }
   20% {
-    color: #ffffb1;
+    color: #ffff98;
   }
   40% {
-    color: #ccffb5;
+    color: #b8ff98;
   }
   60% {
-    color: #b9e0ff;
+    color: #9bd2ff;
   }
   80% {
-    color: #fff4b5;
+    color: #fff09b;
   }
   100% {
-    color: seashell;
+    color: #ffd0ae;
   }
 }
 
@@ -128,19 +128,19 @@
     color: white;
   }
   20% {
-    color: #ffffb1;
+    color: #ffff98;
   }
   40% {
-    color: #ccffb5;
+    color: #b8ff98;
   }
   60% {
-    color: #b9e0ff;
+    color: #9bd2ff;
   }
   80% {
-    color: #fff4b5;
+    color: #fff09b;
   }
   100% {
-    color: seashell;
+    color: #ffd0ae;
   }
 }
 
@@ -330,7 +330,7 @@ nav ul li + li {
 }
 
 nav ul li a {
-  height: 100px;
+  height: 104px;
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +338,12 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 4px solid #42a90600;
   color: #393939;
+}
+
+nav ul li a:hover {
+  border-bottom: 4px solid #43a906;
 }
 
 .main-baner {
@@ -471,6 +476,20 @@ nav ul li a {
           align-items: center;
 }
 
+.welcome-symbols .symbols-block:hover div {
+  background-color: #43a906;
+  border: solid 2px #43a906;
+}
+
+.welcome-symbols .symbols-block:hover .fa-sun, .welcome-symbols .symbols-block:hover .fa-map-marker-alt,
+.welcome-symbols .symbols-block:hover .fa-recycle, .welcome-symbols .symbols-block:hover .fa-pagelines {
+  color: white;
+}
+
+.welcome-symbols .symbols-block:hover h5 {
+  color: #43a906;
+}
+
 .welcome-symbols .symbols-block div {
   width: 120px;
   height: 120px;
@@ -572,8 +591,8 @@ nav ul li a {
 .btn-uor-works:hover {
   background-color: #43a906;
   color: white;
-  -webkit-animation: disco 3s .5s infinite;
-          animation: disco 3s .5s infinite;
+  -webkit-animation: disco 1s .2s infinite linear;
+          animation: disco 1s .2s infinite linear;
 }
 
 .our-works-title-section {
