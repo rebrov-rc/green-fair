@@ -431,7 +431,7 @@ text-transform: uppercase;
     // 
     // background-color: #bdbebd;
     // opacity: 0.22;
-    border: solid;
+    // border: solid;
     .achiv-fon-block{
         position: absolute;
         top: 0;
@@ -473,7 +473,7 @@ text-transform: uppercase;
         &:hover .fa-tree, &:hover .fa-paw,&:hover .fa-leaf,
         &:hover .fa-arrow-up,&:hover .fa-cloud{
             color: rgb(161, 189, 124);
-            animation:fly 2.5s 0s infinite linear;
+            animation:fly 2.5s  infinite linear;
         }
         hr{
             width: 82px;
@@ -501,7 +501,96 @@ text-transform: uppercase;
 // =====================================>
 .latest-event-block{
     height: 955px;
+
+    section{
+        height: 730px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
+.latest-event-title-wrap{
+    @include flexVar(column, space-between, center);
+    height: 80px;
+}
+.latest-event-content-wrap{
+    width: 100%;
+    height: 590px;
+    // border: solid 1px;
+    // 
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.latest-event-big-blocks{
+    grid-row: 1 / 3;
+    // 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.latest-event-small-blocks{
+    grid-row: 1 / 3;
+    // 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 35px;
+}
+.small-blocks-articles-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 22px;
+    a{
+        display: block;
+        // 
+        grid-column: 2 / 5;
+        // 
+        text-decoration: none;
+        h3{
+            color: #454444;
+            font-family: "Roboto Slab";
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p{
+            color: #646464;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: bold;
+            // 
+            margin-top: 1.2em;
+        }
+    }
+} 
+// 
+.event-big-blocks-article{
+    margin: auto;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    p{
+        text-align: center;
+    }
+    .btn-lat-event{
+        display: block;
+        padding: 15px 30px;
+        border-radius: 2px;
+        border: 1px solid #383938;
+        background-color: #101010;
+        // 
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all .2s;
+        &:hover{
+            background-color: #43a906;
+            border: solid 1px #43a906;
+        }
+    }
+}
+
 // =====================================>
 .testimonials-block{
     height: 682px;
