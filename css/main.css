@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700|Open+Sans|Roboto+Slab:400,700&display=swap");
 @-webkit-keyframes dropWorks {
   0% {
     -webkit-transform: scale(0);
@@ -26,7 +27,6 @@
             transform: scale(1);
   }
 }
-
 @keyframes dropWorks {
   0% {
     -webkit-transform: scale(0);
@@ -289,6 +289,32 @@ a {
           align-items: center;
 }
 
+.contacts-line .contacts-wrap .local-and-tel {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #646464;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.contacts-line .contacts-wrap .local-and-tel span + span {
+  border-left: 1px solid #e6e5e5;
+  padding-left: 1em;
+}
+
 .navigation-block {
   height: 105px;
   margin: auto;
@@ -340,10 +366,15 @@ nav ul li a {
           align-items: center;
   border-bottom: 4px solid #42a90600;
   color: #393939;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 nav ul li a:hover {
   border-bottom: 4px solid #43a906;
+  color: #43a906;
 }
 
 .main-baner {
@@ -370,7 +401,6 @@ nav ul li a:hover {
 }
 
 .baner-title-btn-wrap {
-  border: none;
   height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,11 +417,24 @@ nav ul li a:hover {
           align-items: center;
 }
 
+.baner-title-btn-wrap .above-title {
+  font-family: "Lato";
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.23px;
+}
+
 .baner-title-btn-wrap .title {
   font-family: "Open Sans";
   font-size: 60px;
   font-weight: 400;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.baner-title-btn-wrap .under-title {
+  font-family: Lato;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -439,6 +482,15 @@ nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.welcome-wrap .welcome-title-wrap h2 {
+  color: #222222;
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 90px;
+  text-transform: uppercase;
 }
 
 .welcome-symbols {
@@ -611,6 +663,14 @@ nav ul li a:hover {
           align-items: center;
 }
 
+.our-works-title-section h3 {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
 .our-works-img-section {
   display: -ms-grid;
   display: grid;
@@ -633,8 +693,8 @@ nav ul li a:hover {
 }
 
 .our-works-img-section .our-works-img-wrap:hover > div span {
-  -webkit-animation: .8s .5s rot;
-          animation: .8s .5s rot;
+  -webkit-animation: rot .8s .5s;
+          animation: rot .8s .5s;
 }
 
 .our-works-img-section .our-works-img-wrap div {
@@ -744,6 +804,30 @@ nav ul li a:hover {
   color: white;
 }
 
+.our-achivement-title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-achivement-title-section h3 {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
 .our-achivement-data-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +924,14 @@ nav ul li a:hover {
   height: 80px;
 }
 
+.latest-event-title-wrap h3 {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
 .latest-event-content-wrap {
   width: 100%;
   height: 590px;
@@ -862,6 +954,7 @@ nav ul li a:hover {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  background-color: #eff0f2;
 }
 
 .latest-event-small-blocks {

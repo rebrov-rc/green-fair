@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Open+Sans|Roboto+Slab:400,700&display=swap');
+
 // ==== MIXINS =====================>
 @mixin flexVar($dir, $just, $align) {
     display: flex;
@@ -148,10 +150,7 @@ a{
     border-radius: 2px;
     background-color: rgb(66, 169, 6);
 }
-// hr{
-//     position: absolute;
-//     width: 4em;
-// }
+
 // ==== HEADER =====================>
 
 .contacts-line{
@@ -162,10 +161,23 @@ a{
     .contacts-wrap{
         @include flexVar(row, space-between, center);
 
+        .local-and-tel{
+            width: 35%;
+            // 
+            @include flexVar(row, space-between, center);
+            // 
+            color: #646464;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: bold; 
+            span + span{
+                border-left: 1px solid #e6e5e5;
+                padding-left: 1em;
+            }
+        }
     }
 
 }
-
 // ==== NAVIGATION ==================>
 .navigation-block{
     height: 105px;
@@ -201,8 +213,13 @@ nav ul{
             border-bottom: 4px solid #42a90600;  
             // 
             color: #393939;
+            font-family: "Roboto Slab";
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
             &:hover{
                 border-bottom: 4px solid #43a906;  
+                color: #43a906;
 
             }
 
@@ -224,10 +241,15 @@ nav ul{
     }
 }
 .baner-title-btn-wrap{
-    border: none;
     height: 280px;
     // 
     @include flexVar(column, space-between, center);
+    .above-title{
+        font-family: "Lato";
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -0.23px;
+    }
     .title{
         font-family: "Open Sans";
         font-size: 60px;
@@ -236,6 +258,11 @@ nav ul{
         font-weight: bold;
 text-transform: uppercase;
 
+    }
+    .under-title{
+        font-family: Lato;
+        font-size: 20px;
+        text-transform: uppercase;
     }
     a{
         display: block;
@@ -256,6 +283,15 @@ text-transform: uppercase;
     .welcome-title-wrap{
         // border: solid 1px;
         @include flexVar(column, space-between, center);
+        // 
+        h2{
+            color: #222222;
+            font-family: "Roboto Slab";
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 90px;
+            text-transform: uppercase;
+        }
     }
 }
 .welcome-symbols{
@@ -372,6 +408,13 @@ text-transform: uppercase;
 }
 .our-works-title-section{
     @include flexVar(column, space-between, center);
+    h3{
+        font-family: "Roboto Slab";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 90px;
+        text-transform: uppercase;
+    }
 }
 .our-works-img-section{
     // border: solid 1px;
@@ -389,7 +432,7 @@ text-transform: uppercase;
             animation:dropWorks 0.5s  ease;
             // display: block;
             span{
-                animation: .8s .5s rot;
+                animation:rot .8s .5s;
             }
 
         }
@@ -476,6 +519,16 @@ text-transform: uppercase;
         // border: white solid 1px;
     }
 }
+.our-achivement-title-section{
+    @include flexVar(column, center, center);
+    h3{
+        font-family: "Roboto Slab";
+font-size: 36px;
+font-weight: bold;
+line-height: 90px;
+text-transform: uppercase;
+    }
+}
 .our-achivement-data-section{
     @include flexVar(row, space-between, center); 
     // @include flexReg();
@@ -527,6 +580,13 @@ text-transform: uppercase;
 .latest-event-title-wrap{
     @include flexVar(column, space-between, center);
     height: 80px;
+    h3{
+        font-family: "Roboto Slab";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
 }
 .latest-event-content-wrap{
     width: 100%;
@@ -544,6 +604,8 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    // 
+    background-color: #eff0f2;
 }
 .latest-event-small-blocks{
     grid-row: 1 / 3;
