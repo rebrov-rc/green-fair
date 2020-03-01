@@ -116,10 +116,10 @@
     color: #9bd2ff;
   }
   80% {
-    color: #fff09b;
+    color: #ff9e9b;
   }
   100% {
-    color: #ffd0ae;
+    color: #ffe5d2;
   }
 }
 
@@ -137,10 +137,10 @@
     color: #9bd2ff;
   }
   80% {
-    color: #fff09b;
+    color: #ff9e9b;
   }
   100% {
-    color: #ffd0ae;
+    color: #ffe5d2;
   }
 }
 
@@ -643,8 +643,8 @@ nav ul li a:hover {
 .btn-uor-works:hover {
   background-color: #43a906;
   color: white;
-  -webkit-animation: disco 1s .2s infinite linear;
-          animation: disco 1s .2s infinite linear;
+  -webkit-animation: disco 1s infinite linear;
+          animation: disco 1s infinite linear;
 }
 
 .our-works-title-section {

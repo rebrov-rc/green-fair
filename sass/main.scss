@@ -61,7 +61,7 @@
 }
 @keyframes disco{
     0%{
-        color: white;
+        color: rgb(255, 255, 255);
     }
     20%{
         color: rgb(255, 255, 152);
@@ -73,10 +73,10 @@
         color: rgb(155, 210, 255);
     }
     80%{
-        color: rgb(255, 240, 155);
+        color: rgb(255, 158, 155);
     }
     100%{
-        color: rgb(255, 208, 174);
+        color: rgb(255, 229, 210);
     }
 }
 @keyframes fly{
@@ -402,7 +402,7 @@ text-transform: uppercase;
     &:hover{
         background-color: #43a906;
         color: white;
-        animation:disco 1s .2s infinite linear;
+        animation:disco 1s infinite linear;
     }
 
 }
