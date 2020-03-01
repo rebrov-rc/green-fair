@@ -184,7 +184,7 @@ text-transform: uppercase;
     .symbols-block{
         height: 280px;
         width: 250px;
-        // @include brd;
+        // @include brd; 
         @include flexVar(column, space-between, center);
         div{
             width: 120px;
@@ -245,7 +245,36 @@ text-transform: uppercase;
 // =====================================>
 .our-works-block{
     height: 1046px;
+}
+.our-works-wrap{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 820px;
+}
+.our-works-title-section{
+    @include flexVar(column, space-between, center);
 
+}
+.our-works-img-section{
+    // @include flexReg();
+    @include flexVar(row, space-around, center);
+    // border: solid 1px;
+    width: 100%;
+}
+.our-works-img-left-sec{
+    @include flexVar(column, space-between, stretch);
+    // border: solid 1px;
+}
+.our-works-img-bottom-sec{
+    @include flexVar(row, space-between, flex-end);
+    // border: solid 1px;
+}
+.our-works-img-right-sec{
+    @include flexVar(row, center, center);
+    // border: solid 1px;
+    img{
+        width: 283.98px;
+    }
 }
 // =====================================>
 .our-achivement-block{
