@@ -218,8 +218,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: solid 1px gray;
   max-width: 1170px;
   width: 95%;
+}
+
+.center-measure {
+  max-width: 1170px;
+  width: 95%;
+  border: solid 1px gray;
+}
+
+.flx-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px gray;
+}
+
+.flx-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px gray;
+}
+
+.flx-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px gray;
 }
 
 .block {
@@ -358,6 +416,7 @@ nav ul li + li {
 nav ul li a {
   height: 104px;
   display: inline-block;
+  border: solid 1px gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,6 +1098,70 @@ nav ul li a:hover {
 .testimonials-block {
   height: 682px;
   background-color: #010501;
+  color: #ffffff;
+}
+
+.testimonials-title-wrap {
+  height: 40%;
+}
+
+.testimonials-title-wrap h3 {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.testimonials-center-block {
+  height: 455px;
+}
+
+.testimonials-content-wrap {
+  width: 100%;
+}
+
+.testimonials-personal-wrap {
+  width: 570px;
+}
+
+.testimonials-img-wrap {
+  position: absolute;
+  width: 100%;
+}
+
+.img-cyrcle {
+  background-color: #bdbebd;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  margin: auto;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  overflow: hidden;
+}
+
+.img-cyrcle img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -1em;
+     object-position: 0 -1em;
+  width: 100%;
+}
+
+.testimonials-text-block {
+  background-color: #fff;
+  color: #646464;
+  position: relative;
+  height: 190px;
+  margin-bottom: 30px;
+}
+
+.testimonials-text-block span {
+  display: block;
+  padding: 68px 10px 55px 65px;
+}
+
+.green {
+  color: #43a906;
 }
 
 .latest-blog-block {

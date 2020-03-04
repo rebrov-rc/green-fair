@@ -14,7 +14,7 @@
     align-items: center;
 }
 @mixin brd {
-    // border: solid 1px gray;
+    border: solid 1px gray;
 }
 // ===== animation =================>
 @keyframes dropWorks{
@@ -124,6 +124,24 @@ body{
     max-width: 1170px;
     width: 95%;
     // min-height: 5em;
+}
+.center-measure{
+    max-width: 1170px;
+    width: 95%;
+    // 
+    @include brd();
+}
+.flx-row{
+    @include flexVar(row, space-between, center);
+    @include brd();
+}
+.flx-column{
+    @include flexVar(column, space-between, center);
+    @include brd();
+}
+.flx-column-center{
+    @include flexVar(column, center, center);
+    @include brd();
 }
 .block{
     @include flexReg()
@@ -675,6 +693,63 @@ text-transform: uppercase;
     height: 682px;
     // 
     background-color: #010501;
+    color: #ffffff;
+}
+.testimonials-title-wrap{
+    height: 40%;
+    h3{
+        font-family: "Roboto Slab";
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+}
+.testimonials-center-block{
+    height: 455px;
+}
+.testimonials-content-wrap{
+    width: 100%;
+}
+.testimonials-personal-wrap{
+    width: 570px;
+}
+// 
+.testimonials-img-wrap{
+    // border: solid 1px;
+    // 
+    position: absolute;
+    width: 100%;
+}
+.img-cyrcle{
+    background-color: #bdbebd;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    // 
+    margin: auto;
+    transform: translate(0, -50%);
+    overflow: hidden;
+    img{
+        object-fit: cover;
+        object-position: 0 -1em;
+        width: 100%;
+    }
+}
+.testimonials-text-block{
+    background-color: #fff;
+    color: #646464;
+    // 
+    position: relative;
+    height: 190px;
+    margin-bottom: 30px;
+    span{
+        display: block;
+    padding: 68px 10px 55px 65px;
+    // border: solid 1px;
+
+    }
+}
+.green{
+    color: #43a906;
 }
 // =====================================>
 .latest-blog-block{
