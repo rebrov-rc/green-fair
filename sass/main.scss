@@ -456,9 +456,16 @@ text-transform: uppercase;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    .our-works-img-wrap{
+    .our-works-img-wrap{ 
         cursor: pointer;
         position: relative;
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
         &:hover > div{
             opacity: 1;
             animation:dropWorks 0.5s  ease;
@@ -466,6 +473,7 @@ text-transform: uppercase;
             span{
                 animation:rot .8s .5s;
             }
+
 
         }
 
@@ -866,10 +874,6 @@ text-transform: uppercase;
     &-forms-info{
         width: 100%;
     }
-}
-.map{
-    // border: solid;
-
 }
 // =====================================>
 .footer{

@@ -783,6 +783,16 @@ nav ul li a:hover {
 .our-works-img-section .our-works-img-wrap {
   cursor: pointer;
   position: relative;
+  height: 100%;
+}
+
+.our-works-img-section .our-works-img-wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .our-works-img-section .our-works-img-wrap:hover > div {
