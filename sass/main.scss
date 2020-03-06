@@ -182,8 +182,32 @@ a{
     border-radius: 2px;
     background-color: rgb(66, 169, 6);
 }
-
+.rmore{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    padding: .5em 1em;
+    // 
+    border-radius: 1.2em;
+    &:hover{
+        background-color: rgba(241, 241, 241, 0.719);
+    }
+}
 // ==== HEADER =====================>
+.icon-socials + .icon-socials {
+    // color: ;
+    // display: block;
+    margin-left: .9em;
+
+}
+.icon-socials{
+    font-size: 12px;
+    color: #646464;
+    &:hover{
+        color: #43a906;
+    }
+}
 
 .contacts-line{
     height: 48px;
@@ -194,7 +218,7 @@ a{
         @include flexVar(row, space-between, center);
 
         .local-and-tel{
-            width: 35%;
+            width: 37%;
             // 
             @include flexVar(row, space-between, center);
             // 
@@ -204,11 +228,14 @@ a{
             font-weight: bold; 
             span + span{
                 border-left: 1px solid #e6e5e5;
-                padding-left: 1em;
+                padding-left: 2.8em;
             }
         }
     }
 
+}
+.fa-home, .fa-phone-alt{
+    margin-right: .3em;
 }
 // ==== NAVIGATION ==================>
 .navigation-block{
@@ -219,6 +246,18 @@ a{
 
 }
 .logo-wrap{
+    position: relative;
+    .fa-envira{
+        position: absolute;
+        color: #43a906;
+        font-size: 23px;
+        // 
+        transform: translate(.92em, -.39em);
+
+    }
+    .envira-right{
+        transform: rotateY(180deg) translate(-1.8em, -.39em);
+    }
     span{
         color: #3e3e3e;
         font-family: "Roboto Slab";
@@ -232,6 +271,7 @@ nav ul{
     li{
         list-style-type: none;
         position: relative;
+
         
         &+li{
             margin-left: 35px;
@@ -242,15 +282,30 @@ nav ul{
             @include brd; 
             display: flex;
             align-items: center;
-            border-bottom: 4px solid #42a90600;  
+            // border-bottom: 4px solid #42a90600;  
             // 
             color: #393939;
             font-family: "Roboto Slab";
             font-size: 14px;
             font-weight: bold;
             text-transform: uppercase;
+
+            &:hover::after{
+                content:'';
+                position: absolute;
+                bottom: 0;
+                // 
+                // width: 100%;
+                left: -23px;
+                right: -27px;
+                height: 4px;
+                background-color: #43a906;
+                // color: #43a906;
+
+
+            }
             &:hover{
-                border-bottom: 4px solid #43a906;  
+                // border-bottom: 4px solid #43a906;  
                 color: #43a906;
 
             }
@@ -675,6 +730,7 @@ text-transform: uppercase;
             font-weight: bold;
             // 
             margin-top: 1.2em;
+
         }
     }
 } 
@@ -686,7 +742,11 @@ text-transform: uppercase;
     justify-content: space-around;
     p{
         text-align: center;
-        padding: 0 1em;
+        padding: 0 1.9em;
+        font-size: 14px;
+        &::first-letter{
+         padding-left: 6px;       
+        }
     }
     .btn-lat-event{
         display: block;
@@ -716,15 +776,16 @@ text-transform: uppercase;
     color: #ffffff;
 }
 .testimonials-title-wrap{
-    height: 40%;
+    height: 25%;
     h3{
         font-family: "Roboto Slab";
         font-size: 36px;
         text-transform: uppercase;
+        margin-bottom: .9em;
     }
 }
 .testimonials-center-block{
-    height: 455px;
+    height: 495px;
 }
 .testimonials-content-wrap{
     width: 100%;
@@ -774,6 +835,11 @@ text-transform: uppercase;
 .fa-quote-left{
     position: absolute;
     transform: translate(-2.2em, 0.2em);
+}
+.testimonials-pers-bottom-block{
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
 }
 // =====================================>
 .latest-blog-block{
@@ -874,6 +940,12 @@ text-transform: uppercase;
     &-forms-info{
         width: 100%;
     }
+}
+.contact-icons{
+    margin-right: .41em;
+    // 
+    font-size: 22px;
+    color: #696969;
 }
 // =====================================>
 .footer{
