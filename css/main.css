@@ -376,10 +376,16 @@ a {
   width: 120px;
   padding: .5em 1em;
   border-radius: 1.2em;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid 1.2px #42a90600;
 }
 
 .rmore:hover {
-  background-color: rgba(241, 241, 241, 0.719);
+  border: solid 1.2px #43a906;
+  color: #43a906;
 }
 
 .icon-socials + .icon-socials {
@@ -1295,8 +1301,22 @@ nav ul li a:hover {
   height: 927px;
 }
 
+.latest-blog-section {
+  height: 90%;
+  padding-bottom: 5em;
+}
+
 .latest-blog-title-wrap {
   height: 215px;
+}
+
+.latest-blog-title-wrap h3 {
+  text-transform: uppercase;
+  color: #222222;
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 90px;
 }
 
 .latest-blog-content {
@@ -1315,6 +1335,22 @@ nav ul li a:hover {
   border-left: solid 1px #d1d3d1;
   border-right: solid 1px #d1d3d1;
   border-bottom: solid 1px #d1d3d1;
+}
+
+.latest-blog-content-article-title {
+  color: #454444;
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.latest-blog-content-article-data span {
+  font-family: "Open Sans";
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  color: #aeadad;
+  font-size: 13px;
 }
 
 .img-wrap img {
@@ -1386,12 +1422,47 @@ nav ul li a:hover {
   background-color: #eeeeee;
 }
 
+.contact-us-block-title {
+  height: 200px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.contact-us-block-title h6 {
+  color: #222222;
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .contact-us-block-wrap {
   height: 625px;
 }
 
 .contact-us-block-map {
   height: 490px;
+}
+
+.contact-us-block-map span {
+  color: #222222;
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-us-block-map .info-wrap {
+  padding-bottom: 1.5em;
+}
+
+.contact-us-block-map .info-wrap p {
+  color: #696969;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0;
 }
 
 .contact-us-block-map iframe {
@@ -1402,6 +1473,13 @@ nav ul li a:hover {
 .contact-us-block-forms {
   height: 490px;
   width: 570px;
+}
+
+.contact-us-block-forms h6 {
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .contact-us-block-forms form {
